@@ -28,10 +28,13 @@ A modern, responsive portfolio website for a Software Engineer with hands-on exp
 ---
 
 ## 📁 Project Structure
+
+```text
 portfolio/
 │
 ├── index.html
 ├── README.md
+├── .gitignore
 │
 ├── css/
 │   └── style.css                  # All styles in one file
@@ -40,10 +43,18 @@ portfolio/
 │   └── script.js                  # All JS in one file
 │
 ├── images/
+│   ├── profile.jpg
+│   ├── project-1.jpg
+│   ├── project-2.jpg
+│   ├── project-3.jpg
+│   └── favicon.ico
 │
 ├── resume/
 │   └── Baladinisha_Resume.pdf
-
+│
+└── assets/
+    └── fonts/
+```
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
