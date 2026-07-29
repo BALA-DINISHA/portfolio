@@ -29,19 +29,20 @@ A modern, responsive portfolio website for a Software Engineer with hands-on exp
 
 ## 📁 Project Structure
 portfolio/
+│
 ├── index.html
+├── README.md
+│
 ├── css/
-│ ├── style.css
-│ ├── responsive.css
-│ └── animations.css
+│   └── style.css                  # All styles in one file
+│
 ├── js/
-│ ├── script.js
-│ ├── animation.js
-│ └── particles.js
+│   └── script.js                  # All JS in one file
+│
 ├── images/
-├── assets/
-└── resume/
-└── Baladinisha_Resume.pdf
+│
+├── resume/
+│   └── Baladinisha_Resume.pdf
 
 ## 🚀 Quick Start
 
