@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- SEO Meta Tags -->
+    <title>Baladinisha | Software Engineer Portfolio</title>
+    <meta name="description" content="Baladinisha - Aspiring Software Engineer with hands-on experience in Java, Spring Boot, and full-stack web development. Building impactful applications and solving real-world problems.">
+    <meta name="keywords" content="Java, Spring Boot, Full Stack Developer, Software Engineer, Portfolio, Web Development, JSP, Servlets, JDBC, MySQL">
+    <meta name="author" content="Baladinisha">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Baladinisha | Software Engineer Portfolio">
+    <meta property="og:description" content="Aspiring Software Engineer specializing in Java, Spring Boot, and full-stack web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/portfolio">
+    <meta property="og:image" content="https://yourusername.github.io/portfolio/images/og-image.jpg">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Baladinisha | Software Engineer Portfolio">
+    <meta name="twitter:description" content="Aspiring Software Engineer specializing in Java, Spring Boot, and full-stack web development.">
+    <meta name="twitter:image" content="https://yourusername.github.io/portfolio/images/og-image.jpg">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Baladinisha",
+        "jobTitle": "Software Engineer",
+        "email": "Bala.dinisha@gmail.com",
+        "telephone": "+91-8940315878",
+        "url": "https://yourusername.github.io/portfolio",
+        "sameAs": [
+            "https://github.com/yourusername",
+            "https://linkedin.com/in/yourusername"
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader" class="loader-container" aria-hidden="true">
+        <div class="loader-ring">
+            <div class="loader-ring-inner"></div>
+        </div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="custom-cursor" id="customCursor" aria-hidden="true">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- ===== PARTICLES BACKGROUND ===== -->
+    <div id="particles-bg" class="particles-background" aria-hidden="true"></div>
+
+    <!-- ===== ANIMATED BLOB BACKGROUND ===== -->
+    <div class="blob-container" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span class="logo-text">B</span>
+                <span class="logo-dot"></span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#hero" class="nav-link active" role="menuitem"><i class="fas fa-home"></i> Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem"><i class="fas fa-user"></i> About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem"><i class="fas fa-code"></i> Skills</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li role="none"><a href="#education" class="nav-link" role="menuitem"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+ <!-- ===== HERO SECTION ===== -->
+<section id="hero" class="hero section" aria-label="Hero section">
+    <div class="container hero-container" style="grid-template-columns: 1fr; text-align: center;">
+        <div class="hero-content" style="max-width: 800px; margin: 0 auto;">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span>Open to Opportunities</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="greeting">Hi, I'm</span>
+                <span class="name">Bala Dinisha</span>
+                <span class="typing-wrapper">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor"></span>
+                </span>
+            </h1>
+            
+            <p class="hero-description" style="margin-left: auto; margin-right: auto;">
+                Aspiring Software Engineer with hands-on experience in Java, Spring Boot, and full-stack web development. 
+                Passionate about building impactful applications and solving real-world problems through technology.
+            </p>
+            
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+                <a href="resume/dinisha-resume.pdf" class="btn btn-outline" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            
+            <div class="hero-social" style="justify-content: center;">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:Bala.dinisha@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918940315878" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator
+    <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+        </div>
+    </div> -->
+</section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about section" aria-label="About section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm <strong>Dinisha</strong>, an aspiring Software Engineer with hands-on experience in Java, 
+                        Spring Boot, and full-stack web development. I'm passionate about building impactful applications 
+                        and solving real-world problems through technology.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech in Information Technology</p>
+                                <p class="detail-sub">Dr. Sivanthi Aditanar College of Engineering</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Technical Interests</h4>
+                                <p>Java Development, Spring Boot, Full-Stack Web Development</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Career Objective</h4>
+                                <p>To build impactful applications and solve real-world problems through technology</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h4>Currently Learning</h4>
+                                <p>Advanced Spring Boot, Microservices, Cloud Computing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="1">0</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="9.06">0.00</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills section" aria-label="Skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Java">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item" data-skill="HTML">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML5">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Bootstrap">
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Spring Boot">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Servlet">
+                            <span class="skill-name">Servlet</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item" data-skill="JSP">
+                            <span class="skill-name">JSP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                        <div class="skill-item" data-skill="JDBC">
+                            <span class="skill-name">JDBC</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%;"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="MySQL">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item" data-skill="DBMS">
+                            <span class="skill-name">DBMS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Version Control -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Version Control</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item" data-skill="Eclipse IDE">
+                            <span class="skill-name">Eclipse IDE</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item" data-skill="IntelliJ IDE">
+                            <span class="skill-name">IntelliJ IDE</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL Workbench">
+                            <span class="skill-name">MySQL Workbench</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%;"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Concepts -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Core Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP Concepts</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">CRUD Operations</span>
+                        <span class="skill-tag">Database Connectivity</span>
+                        <span class="skill-tag">Responsive UI Design</span>
+                        <span class="skill-tag">REST API</span>
+                        <span class="skill-tag">Session Management</span>
+                        <span class="skill-tag">Authentication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects section" aria-label="Projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: THOORIGAI Portal -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-university"></i>
+                            <!-- <span>Project Screenshot</span> -->
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/BALA-DINISHA/codewatch_backend" class="btn btn-small btn-primary"><i class="fab fa-github"></i> Code</a>
+                                <!-- <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>JSP</span>
+                            <span>Servlets</span>
+                            <span>JDBC</span>
+                            <span>MySQL</span>
+                        </div>
+                        <h3 class="project-title">THOORIGAI Portal</h3>
+                        <p class="project-description">
+                            A comprehensive student management portal with secure Admin and Student modules featuring 
+                            session-based authentication and authorization.
+                        </p>
+                        <div class="project-details">
+                            <details>
+                                <summary>View Details</summary>
+                                <div class="details-content">
+                                    <h4>Problem Solved</h4>
+                                    <p>Efficiently manage student registrations, profile management, and coding performance data.</p>
+                                    <h4>Features</h4>
+                                    <ul>
+                                        <li>Session-based authentication & authorization</li>
+                                        <li>CRUD operations for student management</li>
+                                        <li>Responsive UI for desktop and mobile</li>
+                                        <li>MySQL relational database for data storage</li>
+                                    </ul>
+                                    <h4>Responsibilities</h4>
+                                    <ul>
+                                        <li>Built secure Admin and Student modules</li>
+                                        <li>Implemented CRUD operations using Java Servlets and JDBC</li>
+                                        <li>Designed responsive UI using HTML5, CSS3, JavaScript</li>
+                                        <li>Developed MySQL database schema</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Student Management System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users"></i>
+                            <!-- <span>Project Screenshot</span> -->
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/BALA-DINISHA/studentdb" class="btn btn-small btn-primary"><i class="fab fa-github"></i> Code</a>
+                                <!-- <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tech">
+                            <span>JSP</span>
+                            <span>Servlets</span>
+                            <span>JDBC</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-description">
+                            A complete CRUD application for managing student records using Java, JDBC, Servlets, JSP, 
+                            and MySQL database.
+                        </p>
+                        <div class="project-details">
+                            <details>
+                                <summary>View Details</summary>
+                                <div class="details-content">
+                                    <h4>Problem Solved</h4>
+                                    <p>Simplify student record management with add, view, update, and delete operations.</p>
+                                    <h4>Features</h4>
+                                    <ul>
+                                        <li>Add, View, Update, and Delete student records</li>
+                                        <li>MySQL database connectivity using JDBC</li>
+                                        <li>Deployed on Apache Tomcat</li>
+                                    </ul>
+                                    <h4>Responsibilities</h4>
+                                    <ul>
+                                        <li>Developed full CRUD operations</li>
+                                        <li>Connected MySQL database using JDBC</li>
+                                        <li>Deployed application on Apache Tomcat</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: To-Do List -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                            <!-- <span>Project Screenshot</span> -->
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/BALA-DINISHA/to-do-list" class="btn btn-small btn-primary"><i class="fab fa-github"></i> Code</a>
+                                <!-- <a href="#" class="btn btn-small btn-outline"><i class="fas fa-external-link-alt"></i> Demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <h3 class="project-title">To-Do List App</h3>
+                        <p class="project-description">
+                            A responsive task management application with task creation, update, deletion, and 
+                            completion tracking features.
+                        </p>
+                        <div class="project-details">
+                            <details>
+                                <summary>View Details</summary>
+                                <div class="details-content">
+                                    <h4>Problem Solved</h4>
+                                    <p>Efficient task management with full CRUD operations and completion tracking.</p>
+                                    <h4>Features</h4>
+                                    <ul>
+                                        <li>Create, edit, delete, and mark tasks as completed</li>
+                                        <li>JavaScript DOM manipulation for interactive UI</li>
+                                        <li>Responsive design with Bootstrap</li>
+                                    </ul>
+                                    <h4>Responsibilities</h4>
+                                    <ul>
+                                        <li>Built responsive task management application</li>
+                                        <li>Implemented CRUD operations</li>
+                                        <li>Used JavaScript DOM manipulation</li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE / INTERNSHIP SECTION ===== -->
+    <section id="experience" class="experience section" aria-label="Experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2026 - Mar 2026</div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3>Placement Trainee</h3>
+                            <span class="company">Sentinix Tech Solution</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>
+                                Applied Object-Oriented Programming (OOP) principles to develop modular, reusable, 
+                                and maintainable applications.
+                            </p>
+                            <div class="timeline-details">
+                                <h4>Responsibilities</h4>
+                                <ul>
+                                    <li>Applied OOP principles for modular application development</li>
+                                    <li>Involved in debugging, testing, and optimizing application performance</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tech">
+                                <!-- <span class="tech-tag">Java</span> -->
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Debugging</span>
+                                <span class="tech-tag">Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="education section" aria-label="Education section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="education-timeline">
+                <div class="edu-item">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content glass-card">
+                        <div class="edu-header">
+                            <h3>B.Tech - Information Technology</h3>
+                            <span class="edu-year">2022 - 2026</span>
+                        </div>
+                        <p class="edu-institution">Dr. Sivanthi Aditanar College of Engineering</p>
+                        <div class="edu-details">
+                            <div class="edu-detail">
+                                <span class="edu-label">CGPA</span>
+                                <span class="edu-value">9.06</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- ===== TECHNICAL EXPERTISE SECTION ===== -->
+<section id="expertise" class="expertise section" aria-label="Technical expertise section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Expertise</span>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="expertise-grid">
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Building robust backend systems using Java, Spring Boot, Servlets, and JSP with JDBC for database connectivity.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Spring Boot</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive and interactive user interfaces using HTML5, CSS3, JavaScript, and Bootstrap.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>HTML/CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Designing and managing relational databases with MySQL, implementing CRUD operations and database connectivity.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>MySQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>DBMS</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h3>Version Control</h3>
+                <p>Proficient in Git and GitHub for version control, collaboration, and project management.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Git & GitHub</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java Development</h3>
+                <p>Strong foundation in Java programming, OOP concepts, and building enterprise applications.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Core Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>OOP Concepts</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expertise-card glass-card">
+                <div class="expertise-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Spring Boot</h3>
+                <p>Building microservices and enterprise applications with Spring Boot framework.</p>
+                <div class="expertise-progress">
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Spring Boot</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="resume section" aria-label="Resume section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Resume</span>
+                <h2 class="section-title">My Resume</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="resume-container">
+                <div class="resume-card glass-card">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Download My Resume</h3>
+                    <p>Get a detailed overview of my skills, experience, education, and projects.</p>
+                    <a href="resume/dinisha-resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <div class="resume-preview">
+                        <!-- <div class="preview-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Resume Preview</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact section" aria-label="Contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:baladinisha@gmail.com">baladinisha@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+918940315878">+91 - 8940315878</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/baladinisha/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/baladinisha/</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/BALA-DINISHA/" target="_blank" rel="noopener noreferrer">https://github.com/BALA-DINISHA/</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-c"></i>
+                        </div>
+                        <div>
+                            <h4>LeetCode</h4>
+                            <a href="https://github.com/BALA-DINISHA/" target="_blank" rel="noopener noreferrer">https://leetcode.com/u/baladinisha/</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="formName">Your Name</label>
+                            <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                            <span class="form-error">Please enter your name</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formEmail">Email Address</label>
+                            <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                            <span class="form-error">Please enter a valid email</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry" required>
+                            <span class="form-error">Please enter a subject</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            <span class="form-error">Please enter your message</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">Dinisha<span></span></a>
+                    <p>Aspiring Software Engineer | Java & Spring Boot Developer</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/BALA-DINISHA/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/baladinisha/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:baladinisha@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Baladinisha. All Rights Reserved.</p>
+                <p class="footer-built">Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/particles.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
